@@ -1,5 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
+import { v4 as uuidv4 } from 'uuid';
 
 const initialState = {
   devices: [],
@@ -10,6 +11,7 @@ const url = 'https://api.fda.gov/device/classification.json?search=Imaging&limit
 export const fetchDevices = createAsyncThunk('devices/fetchDevices', async (_, { rejectWithValue }) => {
   try {
     const response = await axios(url);
+    console.log(response.data);
     return response.data;
   } catch (err) {
     return rejectWithValue('Unable to fetch data');
@@ -32,9 +34,11 @@ const devicesSlice = createSlice({
         const newData = data.map((device) => ({
           name: device.device_name,
           class: device.device_class,
-          id: device.submission_type_id,
           code: device.product_code,
           speciality_area: device.review_panel,
+          submission_type: device.submission_type_id,
+          speciality_description: device.medical_specialty_description,
+          id: uuidv4(),
         }));
         return {
           ...state,
