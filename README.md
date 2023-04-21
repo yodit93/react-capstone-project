@@ -39,9 +39,9 @@
 
 ### Key Features <a name="key-features"></a>
 - Dynamic webpage
-- Built with react components
+- Built with react and redux components
 - Responsive design
-- User can book rockets and join missions
+- User can get list of medical divices and their corresponding class's
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
