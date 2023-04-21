@@ -10,23 +10,23 @@ const Details = () => {
       {devices.filter((device) => device.id === id).map((device) => (
         <div className="details" key={device.id} data-testid="test-id">
           <h3 className="device-title">{device.name}</h3>
-          <div className="stats">Device Details</div>
+          <div className="stats">Crypto Details</div>
           <ul className="device-details">
             <li className="property">
-              <span>Code</span>
-              <span>{device.code}</span>
+              <span>Rank</span>
+              <span>{device.rank}</span>
             </li>
             <li className="property">
-              <span>Class</span>
-              <span>{device.class}</span>
+              <span>Supply</span>
+              <span>{device.supply}</span>
             </li>
             <li className="property">
-              <span>Speciality Area</span>
-              <span>{device.speciality_area}</span>
+              <span>Max Supply</span>
+              <span>{device.maxSupply}</span>
             </li>
             <li className="property">
-              <span className="spec">Medical speciality description</span>
-              <span>{device.speciality_description}</span>
+              <span className="spec">Price Usd</span>
+              <span>{device.priceUsd}</span>
             </li>
           </ul>
           <NavLink to="/">

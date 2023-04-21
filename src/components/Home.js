@@ -29,7 +29,7 @@ const Home = () => {
   return (
     <>
       <header className="header">
-        <h2 className="title">Classification of Biomedical Imaging Devices</h2>
+        <h2 className="title">Crypto Currency Status</h2>
         <input
           type="text"
           className="search"
@@ -38,7 +38,7 @@ const Home = () => {
           onChange={handleChange}
         />
       </header>
-      <div className="stats">CLASSIFICATION BY SPECIALITY</div>
+      <div className="stats">Crypto status</div>
       {isLoading && <h2>Loading...</h2>}
       {error && <h2>{error}</h2>}
       <ul className="device-lists">
@@ -48,7 +48,7 @@ const Home = () => {
               <div className="container">
                 <h4 className="name">
                   {device.name}
-                  <span className="sub-type">{device.submission_type}</span>
+                  <span className="sub-type">{device.rank}</span>
                 </h4>
                 <NavLink to={`details/${device.id}`}>
                   <IoArrowForwardCircleOutline className="for-arrow" />
@@ -62,7 +62,7 @@ const Home = () => {
               <div className="container">
                 <h4 className="name">
                   {device.name}
-                  <span className="sub-type">{device.submission_type}</span>
+                  <span className="sub-type">{device.rank}</span>
                 </h4>
                 <NavLink to={`details/${device.id}`}>
                   <IoArrowForwardCircleOutline className="for-arrow" />

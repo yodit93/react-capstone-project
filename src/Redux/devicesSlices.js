@@ -1,13 +1,12 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
-import { v4 as uuidv4 } from 'uuid';
 
 const initialState = {
   devices: [],
   isLoading: false,
   error: null,
 };
-const url = 'https://api.fda.gov/device/classification.json?search=Imaging&limit=6';
+const url = 'https://api.coincap.io/v2/assets#';
 export const fetchDevices = createAsyncThunk('devices/fetchDevices', async (_, { rejectWithValue }) => {
   try {
     const response = await axios(url);
@@ -28,19 +27,10 @@ const devicesSlice = createSlice({
         isLoading: true,
       }))
       .addCase(fetchDevices.fulfilled, (state, action) => {
-        const data = action.payload.results;
-        const newData = data.map((device) => ({
-          name: device.device_name,
-          class: device.device_class,
-          code: device.product_code,
-          speciality_area: device.review_panel,
-          submission_type: device.submission_type_id,
-          speciality_description: device.medical_specialty_description,
-          id: uuidv4(),
-        }));
+        const data = action.payload;
         return {
           ...state,
-          devices: newData,
+          devices: data.data,
           isLoading: false,
         };
       })
