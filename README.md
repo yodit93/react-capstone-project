@@ -32,7 +32,7 @@
 ## 🛠 Built With <a name="built-with"></a>
 
 - Programming languages: 
-    HTML, CSS3, Javascript
+    React and Rdux
 - Tools: 
     Git, GitHub, Linters
 
@@ -42,7 +42,10 @@
 
 ### Key Features <a name="key-features"></a>
 - Responsive
-- Dynamic website for adding and removing books.
+- Dynamic website.
+- Built with react components.
+- Used redux store.
+- Users can access list of medical devices and their corresponding details.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
