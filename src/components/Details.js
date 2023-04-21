@@ -3,30 +3,30 @@ import { useSelector } from 'react-redux';
 import { IoChevronBackSharp } from 'react-icons/io5';
 
 const Details = () => {
-  const { devices } = useSelector((store) => store.devices);
+  const { coins } = useSelector((store) => store.coins);
   const { id } = useParams();
   return (
     <>
-      {devices.filter((device) => device.id === id).map((device) => (
-        <div className="details" key={device.id} data-testid="test-id">
-          <h3 className="device-title">{device.name}</h3>
+      {coins.filter((coin) => coin.id === id).map((coin) => (
+        <div className="details" key={coin.id} data-testid="test-id">
+          <h3 className="coin-title">{coin.name}</h3>
           <div className="stats">Crypto Details</div>
-          <ul className="device-details">
+          <ul className="coin-details">
             <li className="property">
               <span>Rank</span>
-              <span>{device.rank}</span>
+              <span>{coin.rank}</span>
             </li>
             <li className="property">
               <span>Supply</span>
-              <span>{device.supply}</span>
+              <span>{coin.supply}</span>
             </li>
             <li className="property">
               <span>Max Supply</span>
-              <span>{device.maxSupply}</span>
+              <span>{coin.maxSupply}</span>
             </li>
             <li className="property">
               <span className="spec">Price Usd</span>
-              <span>{device.priceUsd}</span>
+              <span>{coin.priceUsd}</span>
             </li>
           </ul>
           <NavLink to="/">

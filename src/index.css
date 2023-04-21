@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +8,7 @@
 
 body {
   background-color: orangered;
+  font-family: 'Lato', sans-serif;
 }
 
 .header {
@@ -42,7 +45,7 @@ body {
   padding-left: 2%;
 }
 
-.device-lists {
+.coin-lists {
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -93,7 +96,7 @@ a {
   top: 2%;
 }
 
-.device-title {
+.coin-title {
   height: 30vh;
   width: 90%;
   color: white;
@@ -105,7 +108,7 @@ a {
   text-align: center;
 }
 
-.device-details {
+.coin-details {
   background-color: rgb(245, 68, 4);
   height: 100vh;
 }

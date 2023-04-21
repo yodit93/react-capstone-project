@@ -13,16 +13,22 @@ jest.mock('react-router-dom', () => ({
 let store;
 beforeEach(() => {
   store = mockStore({
-    devices: {
-      devices: [
+    coins: {
+      coins: [
         {
-          name: 'Light Based Imaging',
-          class: '2',
-          code: 'PSN',
-          speciality_area: 'SU',
-          submission_type: '1',
-          speciality_description: 'General, Plastic Surgery',
-          id: '1',
+
+          id: 'bitcoin',
+          rank: '1',
+          symbol: 'BTC',
+          name: 'Bitcoin',
+          supply: '19352300.0000000000000000',
+          maxSupply: '21000000.0000000000000000',
+          marketCapUsd: '543074435594.6282739081981100',
+          volumeUsd24Hr: '6985906974.5734236508898975',
+          priceUsd: '28062.5267071422143057',
+          changePercent24Hr: '-2.4870462395916264',
+          vwap24Hr: '28386.4166204579195196',
+          explorer: 'https://blockchain.info/',
         },
       ],
       isLoading: false,
@@ -31,7 +37,7 @@ beforeEach(() => {
   });
   store.dispatch = jest.fn();
   useParams.mockReturnValue({
-    id: '1',
+    id: 'bitcoin',
   });
 });
 

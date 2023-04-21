@@ -2,12 +2,12 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const initialState = {
-  devices: [],
+  coins: [],
   isLoading: false,
   error: null,
 };
 const url = 'https://api.coincap.io/v2/assets#';
-export const fetchDevices = createAsyncThunk('devices/fetchDevices', async (_, { rejectWithValue }) => {
+export const fetchCoins = createAsyncThunk('coins/fetchCoins', async (_, { rejectWithValue }) => {
   try {
     const response = await axios(url);
     return response.data;
@@ -16,25 +16,25 @@ export const fetchDevices = createAsyncThunk('devices/fetchDevices', async (_, {
   }
 });
 
-const devicesSlice = createSlice({
-  name: 'devices',
+const coinsSlice = createSlice({
+  name: 'coins',
   initialState,
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(fetchDevices.pending, (state) => ({
+      .addCase(fetchCoins.pending, (state) => ({
         ...state,
         isLoading: true,
       }))
-      .addCase(fetchDevices.fulfilled, (state, action) => {
+      .addCase(fetchCoins.fulfilled, (state, action) => {
         const data = action.payload;
         return {
           ...state,
-          devices: data.data,
+          coins: data.data,
           isLoading: false,
         };
       })
-      .addCase(fetchDevices.rejected, (state, action) => ({
+      .addCase(fetchCoins.rejected, (state, action) => ({
         ...state,
         isLoading: false,
         error: action.payload,
@@ -42,4 +42,4 @@ const devicesSlice = createSlice({
   },
 });
 
-export default devicesSlice.reducer;
+export default coinsSlice.reducer;

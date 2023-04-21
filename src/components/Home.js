@@ -2,18 +2,18 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { IoArrowForwardCircleOutline } from 'react-icons/io5';
 import { NavLink } from 'react-router-dom';
-import { fetchDevices } from '../Redux/devicesSlices';
+import { fetchCoins } from '../Redux/coinsSlices';
 
 const Home = () => {
-  const { devices, isLoading, error } = useSelector((store) => store.devices);
+  const { coins, isLoading, error } = useSelector((store) => store.coins);
   const [state, setState] = useState({
     searchValue: '',
     filtered: [],
   });
   const handleChange = (e) => {
-    const results = devices.filter((device) => {
-      if (e.target.value === '') return devices;
-      return device.name.toLowerCase().includes(e.target.value.toLowerCase());
+    const results = coins.filter((coin) => {
+      if (e.target.value === '') return coins;
+      return coin.name.toLowerCase().includes(e.target.value.toLowerCase());
     });
     setState({
       searchValue: e.target.value,
@@ -22,10 +22,10 @@ const Home = () => {
   };
   const dispatch = useDispatch();
   useEffect(() => {
-    if (devices.length === 0) {
-      dispatch(fetchDevices());
+    if (coins.length === 0) {
+      dispatch(fetchCoins());
     }
-  }, [dispatch, devices.length]);
+  }, [dispatch, coins.length]);
   return (
     <>
       <header className="header">
@@ -41,30 +41,30 @@ const Home = () => {
       <div className="stats">Crypto status</div>
       {isLoading && <h2>Loading...</h2>}
       {error && <h2>{error}</h2>}
-      <ul className="device-lists">
+      <ul className="coin-lists">
         {state.searchValue.length > 1 ? (
-          state.filtered.map((device) => (
-            <li className="list" key={device.id}>
+          state.filtered.map((coin) => (
+            <li className="list" key={coin.id}>
               <div className="container">
                 <h4 className="name">
-                  {device.name}
-                  <span className="sub-type">{device.rank}</span>
+                  {coin.name}
+                  <span className="sub-type">{coin.rank}</span>
                 </h4>
-                <NavLink to={`details/${device.id}`}>
+                <NavLink to={`details/${coin.id}`}>
                   <IoArrowForwardCircleOutline className="for-arrow" />
                 </NavLink>
               </div>
             </li>
           ))
         ) : (
-          devices.map((device) => (
-            <li className="list" key={device.id}>
+          coins.map((coin) => (
+            <li className="list" key={coin.id}>
               <div className="container">
                 <h4 className="name">
-                  {device.name}
-                  <span className="sub-type">{device.rank}</span>
+                  {coin.name}
+                  <span className="sub-type">{coin.rank}</span>
                 </h4>
-                <NavLink to={`details/${device.id}`}>
+                <NavLink to={`details/${coin.id}`}>
                   <IoArrowForwardCircleOutline className="for-arrow" />
                 </NavLink>
               </div>
