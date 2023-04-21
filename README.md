@@ -32,7 +32,7 @@
 ## 🛠 Built With <a name="built-with"></a>
 
 - Programming languages: 
-    React and Rdux
+    React and Redux
 - Tools: 
     Git, GitHub, Linters
 
