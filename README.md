@@ -52,7 +52,7 @@
 
 > Link to deployed project.
 
-- [Live Demo Link](https://space-travellers-app.onrender.com)
+- [Live Demo Link](https://medical-device-classification.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
