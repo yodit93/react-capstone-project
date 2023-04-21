@@ -21,9 +21,9 @@
   - [📝 License ](#-license-)
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Classification of Medical Devices: <a name="about-project"></a>
+# 📖 Crypto currency status: <a name="about-project"></a>
 
-> Classification of Medical Devices is an application that shows the list of medical devices with their classification. The application is built with React and Redux.
+> Crypto currency status is an application that shows the list of crypto coins with their details. The application is built with React and Redux.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -65,7 +65,7 @@
 
 > Link to Video.
 
-- [Link to Video](<a href="https://www.loom.com/share/7795149a340b4e0396b5b42d8ab4d18e">Link to video</a>)
+- [Link to Video](<a href="https://www.loom.com/share/7614d70c4e0e4f53a6e84679ed5f326c">Link to video</a>)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
