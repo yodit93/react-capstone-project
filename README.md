@@ -1,21 +1,24 @@
-<!-- TABLE OF CONTENTS -->
-
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Setup](#setup)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
-
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 \[Invest\_Data\_App\] ](#-invest_data_app-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 Classification of Medical Devices: <a name="about-project"></a>
@@ -29,19 +32,20 @@
 ## 🛠 Built With <a name="built-with"></a>
 
 - Programming languages: 
-    JSX, CSS3, React, Redux
+    React and Rdux
 - Tools: 
-    Git, GitHub, Linters, npm, VSCode, ESlint, Stylelint, React, Redux, React-Redux, React-Router, React-Create-App, React-DOM, React-Redux, React-Router-DOM, Redux-Logger, Redux-Thunk, Webpack, Babel, Node, NPM, Yarn, Heroku, Netlify, GitHub Actions, ESLint, Stylelint, Jest, React Testing Library, Redux Mock Store, and React-Redux-Firebase.
+    Git, GitHub, Linters
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-- Dynamic webpage
-- Built with react and redux components
-- Responsive design
-- User can get list of medical divices and their corresponding class's
+- Responsive
+- Dynamic website.
+- Built with react components.
+- Used redux store.
+- Users can access list of medical devices and their corresponding details.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -52,7 +56,16 @@
 
 > Link to deployed project.
 
-- [Live Demo Link](https://medical-device-classification.onrender.com)
+- [Live Demo Link](<a href="https://medical-device-classification.onrender.com">Live Demo</a>)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- Link to Video -->
+
+## 🚀 Link to Video <a name="Link to Video"></a>
+
+> Link to Video.
+
+- [Link to Video](<a href="https://www.loom.com/share/7795149a340b4e0396b5b42d8ab4d18e">Link to video</a>)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -66,35 +79,71 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-- Git and Code editor.
+```
+Node js
+```
+
+```sh
+sudo yarn install nodejs
+```
 
 ### Setup
 
 Clone this repository to your desired folder:
-``git clone `https://github.com/yodit93/react-capstone-project.git`
-Install necessery dependencies using the following syntax.
-- npm install
-Finally run the app using the following syntax.
-- npm start
+
+```sh
+  git clone  https://github.com/yodit93/react-capstone-project.git
+```
+
+### Install
+
+Install this project with:
+
+Example command:
+
+```sh
+  cd invest-data-app
+  npm install
+  npm run build
+```
+
+### Usage
+
+To run the project, execute the following command:
+
+```sh
+  npm start
+```
+
+### Run tests
+
+To run tests, run the following command:
+
+```sh
+  npm run test
+```
+
+### Deployment
+
+You can deploy this project using:
+
+```sh
+  Github pages
+  Render
+  Netlify
+  etc
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### Future Features <a name="key-features"></a>
-- Implement some UX improvements: transitions and animations.
-- Add more tests.
-- Add more features to the app.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
 👤 Yodit Abebe
 
-- GitHub: [yodit93](https://github.com/yodit93)
-- Twitter: [@yodtwit](https://twitter.com/yodtwit)
-- LinkedIn: [Yodit Abebe](linkedin.com/in/yodit-abebe-a97a68140)
+- GitHub: [@Newtayo](https://github.com/Newtayo)
+- Twitter: [@Omortayoh](https://twitter.com/Omortayoh)
+- LinkedIn: [Akande Abdulwasiu](https://linkedin.com/in/AkandeAbdulwasiu)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -106,7 +155,7 @@ Finally run the app using the following syntax.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/yodit93/react-capstone-project/issues).
+Feel free to check the [issues page](https://github.com/Newtayo/Awesome-books/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -123,6 +172,10 @@ Feel free to check the [issues page](https://github.com/yodit93/react-capstone-p
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
+- Microverse teamamets
+- Mentors
+- Design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
+
 > I would like to thank [Microverseinc](https://github.com/microverseinc).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -132,5 +185,4 @@ Feel free to check the [issues page](https://github.com/yodit93/react-capstone-p
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
