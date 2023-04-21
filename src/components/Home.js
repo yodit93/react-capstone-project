@@ -13,7 +13,6 @@ const Home = () => {
   const handleChange = (e) => {
     const results = devices.filter((device) => {
       if (e.target.value === '') return devices;
-      console.log(e.target.value);
       return device.name.toLowerCase().includes(e.target.value.toLowerCase());
     });
     setState({
@@ -26,7 +25,7 @@ const Home = () => {
     if (devices.length === 0) {
       dispatch(fetchDevices());
     }
-  }, [dispatch]);
+  }, [dispatch, devices.length]);
   return (
     <>
       <header className="header">

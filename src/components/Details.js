@@ -8,7 +8,7 @@ const Details = () => {
   return (
     <>
       {devices.filter((device) => device.id === id).map((device) => (
-        <div className="details" key={device.id}>
+        <div className="details" key={device.id} data-testid="test-id">
           <h3 className="device-title">{device.name}</h3>
           <div className="stats">Device Details</div>
           <ul className="device-details">

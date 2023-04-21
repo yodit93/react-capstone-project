@@ -11,7 +11,6 @@ const url = 'https://api.fda.gov/device/classification.json?search=Imaging&limit
 export const fetchDevices = createAsyncThunk('devices/fetchDevices', async (_, { rejectWithValue }) => {
   try {
     const response = await axios(url);
-    console.log(response.data);
     return response.data;
   } catch (err) {
     return rejectWithValue('Unable to fetch data');
@@ -30,7 +29,6 @@ const devicesSlice = createSlice({
       }))
       .addCase(fetchDevices.fulfilled, (state, action) => {
         const data = action.payload.results;
-        console.log(data);
         const newData = data.map((device) => ({
           name: device.device_name,
           class: device.device_class,

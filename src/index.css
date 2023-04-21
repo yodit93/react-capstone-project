@@ -67,7 +67,7 @@ body {
   padding: 3%;
 }
 
-.list:nth-child(2), 
+.list:nth-child(2),
 .list:nth-child(3n) {
   background-color: rgba(208, 57, 3, 0.63);
 }
