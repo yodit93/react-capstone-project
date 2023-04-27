@@ -32,7 +32,7 @@
 ## 🛠 Built With <a name="built-with"></a>
 
 - Programming languages: 
-    React and Rdux
+    React and Redux
 - Tools: 
     Git, GitHub, Linters
 
@@ -45,7 +45,7 @@
 - Dynamic website.
 - Built with react components.
 - Used redux store.
-- Users can access list of medical devices and their corresponding details.
+- Users can access list of crypto coins and their corresponding details.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,7 +102,7 @@ Install this project with:
 Example command:
 
 ```sh
-  cd invest-data-app
+  cd react-capstone-project
   npm install
   npm run build
 ```
@@ -141,9 +141,9 @@ You can deploy this project using:
 
 👤 Yodit Abebe
 
-- GitHub: [@Newtayo](https://github.com/Newtayo)
-- Twitter: [@Omortayoh](https://twitter.com/Omortayoh)
-- LinkedIn: [Akande Abdulwasiu](https://linkedin.com/in/AkandeAbdulwasiu)
+- GitHub: [yodit93](https://github.com/yodit93)
+- Twitter: [@yodtwit](https://twitter.com/yodtwit)
+- LinkedIn: [Yodit Abebe](linkedin.com/in/yodit-abebe-a97a68140)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -155,7 +155,7 @@ You can deploy this project using:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Newtayo/Awesome-books/issues).
+Feel free to check the [https://github.com/yodit93/react-capstone-project/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
